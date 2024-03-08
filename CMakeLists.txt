@@ -14,12 +14,32 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 set(PROJECT_SOURCES
-            ${PROJECT_SOURCE_DIR}/Game.cpp
-	    ${PROJECT_SOURCE_DIR}/Engine.cpp
+	    ${PROJECT_SOURCE_DIR}/Aircraft.cpp
+            ${PROJECT_SOURCE_DIR}/Command.cpp
+	    ${PROJECT_SOURCE_DIR}/CommandQueue.cpp
+	    ${PROJECT_SOURCE_DIR}/Entity.cpp
+	    ${PROJECT_SOURCE_DIR}/Game.cpp
+	    ${PROJECT_SOURCE_DIR}/Player.cpp
+	    ${PROJECT_SOURCE_DIR}/SceneNode.cpp
+	    ${PROJECT_SOURCE_DIR}/SpriteNode.cpp
+	    ${PROJECT_SOURCE_DIR}/World.cpp
             ${PROJECT_SOURCE_DIR}/main.cpp)
 set(PROJECT_HEADERS
-            ${PROJECT_SOURCE_DIR}/Game.hpp
-            ${PROJECT_SOURCE_DIR}/Engine.hpp
+	    ${PROJECT_SOURCE_DIR}/Aircraft.hpp
+	    ${PROJECT_SOURCE_DIR}/Category.hpp
+ 	    ${PROJECT_SOURCE_DIR}/Command.hpp
+ 	    ${PROJECT_SOURCE_DIR}/CommandQueue.hpp
+ 	    ${PROJECT_SOURCE_DIR}/Entity.hpp
+ 	    ${PROJECT_SOURCE_DIR}/Foreach.hpp
+ 	    ${PROJECT_SOURCE_DIR}/Game.hpp
+ 	    ${PROJECT_SOURCE_DIR}/Player.hpp
+            ${PROJECT_SOURCE_DIR}/ResourceHolder.hpp
+            ${PROJECT_SOURCE_DIR}/ResourceHolder.inl
+            ${PROJECT_SOURCE_DIR}/SceneNode.hpp
+            ${PROJECT_SOURCE_DIR}/SpriteNode.hpp
+            ${PROJECT_SOURCE_DIR}/StringHelpers.hpp
+	    ${PROJECT_SOURCE_DIR}/StringHelpers.inl
+	    ${PROJECT_SOURCE_DIR}/World.hpp
             )
 
 include_directories(${PROJECT_INCLUDE_DIR})
